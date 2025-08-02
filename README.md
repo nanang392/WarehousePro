@@ -1,34 +1,46 @@
 # Warehouse Pro: Sistem Manajemen Gudang Modern 📦
 
 <p align="center">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-  <img style="margin-right: 8px;" src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS">
-  <a href="https://github.com/nanang392/WarehousePro"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"></a>
+  <img src="assets/logogudang.png" alt="WarehousePro Logo" width="200">
 </p>
 
-Warehouse Pro adalah sistem manajemen gudang berbasis web yang dirancang untuk menyederhanakan dan mengoptimalkan operasi gudang Anda. Sistem ini menyediakan berbagai fitur untuk membantu Anda melacak inventaris, mengelola transaksi, dan menghasilkan laporan. Dengan antarmuka yang intuitif dan mudah digunakan, Warehouse Pro memungkinkan Anda meningkatkan efisiensi dan mengurangi kesalahan.
+<p align="center">
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" style="margin-right: 8px;" alt="PHP Badge">
+    </a>
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" style="margin-right: 8px;" alt="HTML5 Badge">
+    </a>
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white" style="margin-right: 8px;" alt="Tailwind CSS Badge">
+    </a>
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" style="margin-right: 8px;" alt="JavaScript Badge">
+    </a>
+    <a href="https://shields.io/">
+        <img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" style="margin-right: 8px;" alt="MySQL Badge">
+    </a>
+</p>
 
-Sistem ini dirancang untuk membantu bisnis mengelola stok barang, melacak pergerakan barang, dan menghasilkan laporan penting untuk pengambilan keputusan. Warehouse Pro memungkinkan Anda untuk memiliki visibilitas penuh atas inventaris Anda dan mengelola operasi gudang Anda dengan lebih efektif.
+Warehouse Pro adalah sistem manajemen gudang yang dirancang untuk membantu bisnis mengoptimalkan operasi penyimpanan mereka. Dengan antarmuka yang intuitif dan fitur-fitur canggih, Warehouse Pro menyederhanakan pelacakan inventaris, pengelolaan pesanan, dan pelaporan. Sistem ini dibangun dengan PHP, HTML, Tailwind CSS, dan JavaScript, dengan database MySQL.
 
 ## Fitur Utama ✨
 
-*   **Manajemen Inventaris 📦**: Kelola stok barang dengan mudah, termasuk menambah, mengurangi, dan memperbarui informasi produk.
-*   **Pelaporan Mendalam 📊**: Dapatkan wawasan berharga dengan laporan yang dapat disesuaikan, termasuk tingkat stok, transaksi, dan lainnya. Export laporan penting ke format yang berbeda.
-*   **Manajemen Transaksi 🧾**: Catat dan kelola semua transaksi gudang, termasuk penerimaan, pengiriman, dan penyesuaian.
-*   **Dashboard Interaktif 📈**: Dapatkan gambaran umum yang jelas tentang kinerja gudang Anda dengan dashboard yang intuitif.
-*   **Manajemen Supplier 🚚**: Kelola data supplier, export data supplier dan lacak data supplier dengan mudah.
+*   **📈 Analisis Inventaris *Real-time***: Dapatkan visibilitas penuh atas inventaris Anda dengan pemantauan real-time, dasbor interaktif, dan laporan yang dapat disesuaikan.
+*   **🚚 Manajemen Alur Kerja yang Efisien**: Otomatiskan alur kerja penerimaan, penyimpanan, pengambilan, dan pengiriman untuk meningkatkan efisiensi dan mengurangi kesalahan.
+*   **📊 Laporan dan Analisis yang Mendalam**: Hasilkan laporan mendetail tentang kinerja inventaris, tren penjualan, dan efisiensi operasional untuk pengambilan keputusan yang lebih baik.
+*   **API 🌐**: Tersedia API untuk integrasi dengan sistem lain seperti e-commerce atau akuntansi. Memudahkan pertukaran data dan otomatisasi proses.
 
 ## Tech Stack 🛠️
 
-*   PHP 🐘
-*   HTML 🧱
-*   JavaScript ☕
-*   Tailwind CSS 🎨
-*   MySQL (kemungkinan, berdasarkan `config/database.php`) 🗄️
+*   Bahasa Pemrograman: PHP
+*   Frontend: HTML, JavaScript, Tailwind CSS
+*   Database: MySQL
+*   API
 
 ## Instalasi & Menjalankan 🚀
+
+Ikuti langkah-langkah berikut untuk menginstal dan menjalankan WarehousePro:
 
 1.  Clone repositori:
     ```bash
@@ -38,24 +50,25 @@ Sistem ini dirancang untuk membantu bisnis mengelola stok barang, melacak perger
     ```bash
     cd WarehousePro
     ```
-3.  Instal dependensi (Asumsi menggunakan Composer untuk manajemen dependensi PHP):
+3.  Install dependensi (dengan Composer):
     ```bash
     composer install
     ```
 4.  Konfigurasi database:
-    *   Edit file `config/database.php` dan masukkan informasi koneksi database Anda (host, username, password, nama database).
-5. Jalankan proyek (dengan server PHP bawaan):
-
+    *   Edit file `config/database.php` dengan informasi database MySQL Anda (nama host, nama database, nama pengguna, kata sandi).
+5.  Jalankan server PHP (misalnya, menggunakan server bawaan PHP):
     ```bash
     php -S localhost:8000 -t .
     ```
-
-    Buka browser Anda dan kunjungi `http://localhost:8000`. Atau konfigurasi melalui web server seperti Apache atau Nginx.
+    Atau, konfigurasi server web seperti Apache atau Nginx untuk menunjuk ke direktori proyek.
+6.  Buka browser dan kunjungi `http://localhost:8000` (atau alamat yang Anda konfigurasi untuk server web Anda).
 
 ## Cara Berkontribusi 🤝
 
+Kami menyambut kontribusi dari komunitas! Untuk berkontribusi pada WarehousePro, ikuti langkah-langkah berikut:
+
 1.  Fork repositori ini.
-2.  Buat branch baru untuk fitur atau perbaikan Anda: `git checkout -b nama-fitur`
-3.  Lakukan perubahan dan commit: `git commit -m "Tambahkan fitur baru"`
-4.  Push ke branch Anda: `git push origin nama-fitur`
-5.  Buat Pull Request ke branch `main` repositori ini.
+2.  Buat branch untuk fitur atau perbaikan bug Anda: `git checkout -b feature/nama-fitur` atau `git checkout -b fix/nama-bug`
+3.  Lakukan commit dengan pesan yang jelas dan deskriptif: `git commit -m "Menambahkan fitur baru"`
+4.  Push ke branch Anda: `git push origin feature/nama-fitur`
+5.  Buat Pull Request ke branch `main` di repositori ini.
